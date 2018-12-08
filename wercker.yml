@@ -43,3 +43,12 @@ build:
         name: go test
         code: |
           go test ./...
+
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $USERNAME
+        password: $PASSWORD
+        tag: latest
+        repository: oliverroer/pipeline
+        registry: https://registry.hub.docker.com
