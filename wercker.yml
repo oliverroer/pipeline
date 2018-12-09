@@ -57,8 +57,8 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        username: $USERNAME
-        password: $PASSWORD
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
         cmd: /pipeline/source/pipeline
         tag: latest
         repository: oliverroer/pipeline
