@@ -56,4 +56,5 @@ deploy:
         password: $PASSWORD
         tag: latest
         repository: oliverroer/pipeline
+        entrypoint: /pipeline/source/pipeline
         registry: https://registry.hub.docker.com
