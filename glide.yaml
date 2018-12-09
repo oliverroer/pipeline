@@ -1,0 +1,4 @@
+package: github.com/oliverroer/pipeline
+import:
+- package: github.com/olekukonko/tablewriter
+  version: v0.0.1
