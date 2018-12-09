@@ -24,7 +24,12 @@ build:
   steps:
     # Sets the go workspace and places you package
     # at the right place in the workspace tree
-    - setup-go-workspace
+    - setup-go-workspace:
+        package-dir: github.com/oliverroer/pipeline
+
+    - script:
+        name: env
+        code: env
 
     # Gets the dependencies
     - script:
@@ -54,7 +59,7 @@ deploy:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
+        cmd: /pipeline/source/pipeline
         tag: latest
         repository: oliverroer/pipeline
-        entrypoint: /pipeline/source/pipeline
         registry: https://registry.hub.docker.com
