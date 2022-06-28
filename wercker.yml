@@ -24,7 +24,7 @@ deploy:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        cmd: ./pipeline/source/pipeline
+        cmd: /pipeline/source/pipeline
         tag: latest
         repository: oliverroer/pipeline
         registry: https://registry.hub.docker.com
