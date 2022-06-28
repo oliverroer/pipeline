@@ -1,0 +1,1 @@
+wercker build --direct-mount

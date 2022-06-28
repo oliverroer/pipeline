@@ -12,7 +12,7 @@ func main() {
 		{"Beelzebub", "30", "30/50", "(1,1,1)"},
 		{"Hortense", "21", "80/80", "(1,1,1)"},
 		{"Pokey", "8", "30/40", "(1,1,1)"},
-		{"Pokey 3", "8", "30/40", "(1,1,1)"},
+		{"Pokey 5", "8", "30/40", "(1,1,1)"},
 	}
 
 	table := tablewriter.NewWriter(os.Stdout)
